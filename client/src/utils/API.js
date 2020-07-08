@@ -1,18 +1,15 @@
 import axios from "axios";
 
 export default {
-  
-  postPlayers: function() {
-    return axios.post("/api/newround");
+
+  postPlayers: function(names) {
+    return axios.post("/api/players", names);
   },
-  getSession: function() {
-    return axios.get("/api/hole/" +id);
+  getHole: function(id) {
+    return axios.get("/api/hole/" + id);
   },
-  postHole: function(id) {
-    return axios.post("/api/n/" + id);
-  },
-  getResults: function() {
-    return axios.get("/api/hole/" +id);
-  },
+  postHole: function(id, holeData) {
+    return axios.post("/api/hole/" + id, holeData);
+  }
 
 };
