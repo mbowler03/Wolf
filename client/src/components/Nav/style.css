@@ -1,12 +1,12 @@
 .navbar {
-    background-color: green
+    background-color: black;
 }
 
 .navbar-brand{
-    background-color: green
+    background-color: black;
 }
 .navbar-nav{
-    background-color: green;
+    background-color: black;
 }
 a {
     text-decoration: none;

@@ -34,8 +34,7 @@ class NewRound extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>Wolf</h1>
-              <h2>New Round</h2>
+              
             </Jumbotron>
             
 
