@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar bg-dark">
       <Link className="navbar-brand" to="/">
-        Wolf
+      <button>Home</button>
       </Link>
       <div>
         <ul className="navbar-nav">
@@ -19,7 +19,7 @@ function Navbar() {
                   : "nav-link"
               }
             >
-              About
+              <button>About</button>
             </Link>
           </li>
           <li className="nav-item">
@@ -27,7 +27,7 @@ function Navbar() {
               to="/newround"
               className={window.location.pathname === "/newround" ? "nav-link active" : "nav-link"}
             >
-              New Round
+            <button>New Round</button>
             </Link>
           </li>
         </ul>
