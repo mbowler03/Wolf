@@ -1,5 +1,6 @@
 .jumbotron{
-    background-image: url("golfcourse.jpg");
+    background-image: url("title.jpg");
+    background-color: black;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

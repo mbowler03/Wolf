@@ -1,12 +1,12 @@
 .navbar {
-    background-color: green
+    
 }
 
 .navbar-brand{
-    background-color: green
+ 
 }
 .navbar-nav{
-    background-color: green;
+    
 }
 a {
     text-decoration: none;
@@ -24,4 +24,34 @@ a {
 .nav-item {
     font-size: 25px;
 
+}
+button{
+    background-color: darkgreen;
+    font-family: 'Baloo Thambi', cursive;
+    text-align: center;
+    color: white;
+    border: 2px solid red;
+    border-radius: 12px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    background-image: linear-gradient(darkgreen, green);
+}
+button:hover {background-color: #3e8e41;
+              cursor: pointer;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  cursor: pointer;
+}
+
+nav{
+    background-image: url("grass.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px; 
+    width: 100%;
+    opacity: 0.8;
 }
