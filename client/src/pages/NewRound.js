@@ -4,29 +4,22 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Input, FormBtn } from "../components/Form";
-
+import API from "../utils/API.js"
 
 class NewRound extends Component {
   state = {
   
-      rest: [],
-      wolf: []
+      players: []
   };
 
 
-  handleInputChange = event => {
-    const { rest, value } = event.target;
-    this.setState({
-      [rest]: value
-    });
-  };
 
-  /*handleFormSubmit = event => {
+  handleButtonSubmit = event => {
     event.preventDefault();
-    API.post(this.state.wolf)
-      .then(res => this.setState({ : res.data }))
+    API.postPlayers(this.state.players)
+      .then(res => this.setState({ players:res.data }))
       .catch(err => console.log(err));
-  }; */
+  };
 
   render() {
     return (
@@ -42,42 +35,15 @@ class NewRound extends Component {
             <Container fluid>
             <form>
               <h2>Player Input</h2>
-              <Input value={this.player} name="player1" placeholder="Player 1 Name (required)" />
-              <Input value={this.player} name="player2" placeholder="Player 2 Name (required)" />
-              <Input name="player3" placeholder="Player 3 Name (required)" />
-              <Input name="player4" placeholder="Player 4 Name (required)" />
-              <FormBtn onClick={this.handleFormSubmit}>Submit Names</FormBtn>
+              <Input value={this.state.players[0]} name="player1" placeholder="Player 1 Name (required)" />
+              <Input value={this.state.players[1]} name="player2" placeholder="Player 2 Name (required)" />
+              <Input name={this.state.players[2]} name="player3" placeholder="Player 3 Name (required)" />
+              <Input name={this.state.players[3]}name-="player4" placeholder="Player 4 Name (required)" />
+              <FormBtn onClick={this.handleButtonSubmit}>Submit Names</FormBtn>
             </form>
             </Container>
 
-            <Container fluid>
-            <form>
-              <h2>Team Hunter</h2>
-
-              <Input name="hunter-score" placeholder="Score Number (required)" />
-              <FormBtn
-                onClick={this.handleFormSubmit}
-                type="success"
-                className="input-lg"
-              >
-              SUBMIT
-              </FormBtn>
-            </form>
-            </Container>
-
-            <Container>
-            <form>
-              <h2>Team Wolf</h2>
-              <Input name="wolf-score" placeholder="Score Number (required)" />
-              <FormBtn
-                onClick={this.handleFormSubmit}
-                type="success"
-                className="input-lg"
-              >
-              SUBMIT
-              </FormBtn>
-            </form>
-            </Container>
+        
 
             </Col>
             </Row>
