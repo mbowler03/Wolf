@@ -28,25 +28,21 @@ class BeginHole extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            <Jumbotron>
-              <h1>Wolf</h1>
-              <h2>Hole X</h2>
-            </Jumbotron>
+            
+              
             
 
 
             <Container fluid>
             <form>
+             <h1>Wolf</h1>
+              <h2>Hole X</h2>
+              <br></br>
+            
               <h2>Wolf Team Score</h2>
 
               <Input name="hole-bet" placeholder="Hole Score (required)" />
-              <FormBtn
-                onClick={this.handleFormSubmit}
-                type="success"
-                className="input-lg"
-              >
-              SUBMIT
-              </FormBtn>
+             
             </form>
             </Container>
 
