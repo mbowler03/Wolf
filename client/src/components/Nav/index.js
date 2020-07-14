@@ -5,9 +5,7 @@ import "./style.css";
 function Navbar() {
   return (
     <nav className="navbar bg-dark">
-      <Link className="navbar-brand" to="/">
-      <button>Home</button>
-      </Link>
+      
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">

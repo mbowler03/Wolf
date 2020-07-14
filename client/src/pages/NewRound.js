@@ -4,7 +4,8 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Input, FormBtn } from "../components/Form";
-import API from "../utils/API.js"
+import API from "../utils/API.js";
+import './style.css';
 
 class NewRound extends Component {
   state = {
@@ -26,9 +27,7 @@ class NewRound extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            <Jumbotron>
-              
-            </Jumbotron>
+           
             
 
             <Container fluid>

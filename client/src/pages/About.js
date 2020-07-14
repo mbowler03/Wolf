@@ -3,14 +3,13 @@ import Jumbotron from "../components/Jumbotron";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import './style.css';
 
 
 function About() {
   return (
     <div>
-      <Jumbotron size="lg-12">
-       
-      </Jumbotron>
+      
       <Container>
       <Row>
           <Col size="md-12"> 

@@ -25,10 +25,7 @@ class PlayerSelect extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            <Jumbotron>
-              <h1>Wolf</h1>
-              <h2>Player Select</h2>
-            </Jumbotron>
+            
             <Container fluid> 
             <h2>Wolf X select your player **optional**</h2>      
 {this.state.rest.map((player, index) => {
