@@ -49,11 +49,14 @@ button:active {
 nav{
     background-image: url("bg.jpg");
     background-position: center;
+    max-width: 832px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 200px; 
     width: 100%;
     background-color: darkgreen;
+    position: fixed;
+    
     
 }
 

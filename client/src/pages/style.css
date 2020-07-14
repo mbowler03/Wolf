@@ -1,13 +1,19 @@
 h1{
         font-family: 'Baloo Thambi', cursive;
-        color: white;
+        color: whitesmoke;
 }
 
 p{
         font-family: 'Baloo Thambi', cursive;
-        color: white;
+        color: whitesmoke;
 }
 
 body{
         background: darkgreen;
+        max-width: 1000px;
+        margin: auto;
+}
+
+html{
+        color: white;
 }
