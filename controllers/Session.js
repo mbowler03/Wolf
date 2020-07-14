@@ -51,7 +51,7 @@ module.exports = {
 		.then(db_session =>
 		{
 			id = db_session._id;
-			return add_players(req.body.players, db_session, 0)
+			return add_players(req.body, db_session, 0)
 		}).then(() => res.json(id))
 		.catch(err => res.status(422).json(err));
 	},
