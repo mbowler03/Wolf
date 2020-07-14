@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Input, FormBtn } from "../components/Form";
+import './style.css';
 
 
 class PlayerSelect extends Component {
