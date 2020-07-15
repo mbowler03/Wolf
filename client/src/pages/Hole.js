@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
+import API from "../utils/API";
 import PlayerSelect from "../components/PlayerSelect";
-import StartHole from "../components/StartHole";
+import BeginHole from "../components/BeginHole";
 import EndHole from "../components/EndHole";
 
 class Hole extends Component {
@@ -76,7 +73,7 @@ class Hole extends Component {
 
 		case 1:
 			return (
-				<StartHole
+				<BeginHole
 					wolf={this.state.wolf}
 					hunters={this.state.hunters}
 					next={this.endHole}
@@ -91,12 +88,15 @@ class Hole extends Component {
 					next={this.reset}
 				/>
 			);
+
+		default:
+			return <div></div>
 		}
 	};
 
 	render() {
-		return (
-			{render_components()}
-		);
+		return this.render_components()
 	};
 };
+
+export default Hole;
