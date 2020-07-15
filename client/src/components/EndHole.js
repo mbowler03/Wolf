@@ -1,22 +1,27 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Input, FormBtn } from "../components/Form";
+import './style.css';
 
 
-
-class BeginHole extends Component {
+class EndHole extends Component {
   state = {
-  
-      WolfScore: [],
-      HunterScore: []
+
+      players: [],
+      amounts: []
   };
 
 
+  /*handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [rest]: value
+    });
+  };
 
-  /*handleButtonSubmit = event => {
+  /*handleFormSubmit = event => {
     event.preventDefault();
     API.post(this.state.wolf)
       .then(res => this.setState({ : res.data }))
@@ -28,21 +33,16 @@ class BeginHole extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            
-              
-            
+
+
 
 
             <Container fluid>
             <form>
-             <h1>Wolf</h1>
-              <h2>Hole X</h2>
-              <br></br>
-            
               <h2>Wolf Team Score</h2>
 
               <Input name="hole-bet" placeholder="Hole Score (required)" />
-             
+
             </form>
             </Container>
 
@@ -60,7 +60,7 @@ class BeginHole extends Component {
               </FormBtn>
             </form>
             </Container>
-     
+
 
             </Col>
             </Row>
@@ -68,4 +68,4 @@ class BeginHole extends Component {
     );
 }
 };
-  export default BeginHole;
+  export default EndHole;

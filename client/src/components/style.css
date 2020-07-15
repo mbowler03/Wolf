@@ -1,0 +1,23 @@
+h1{
+        font-family: 'Baloo Thambi', cursive;
+        color: #7b9395;
+}
+
+p{
+        font-family: 'Baloo Thambi', cursive;
+        color: #7b9395;
+}
+
+body{
+        background: #096615;
+        max-width: 1000px;
+        margin: auto;
+}
+
+html{
+        color: white;
+}
+
+h2{
+        color: #7b9395;
+}
