@@ -7,19 +7,17 @@ import './style.css';
 
 
 class PlayerSelect extends Component {
-  state = {
+state = {
+bet: 0
+}
+  componentDidMount() {this.props.setup()} 
+ 
+betSubmit = () => this.props.next(this.state.bet)
 
-      rest: ['mike', 'matt', 'sally'],
-      bet: []
-  };
 
-  /*handleButtonClick = event => {
-    event.preventDefault();
-    API.post(this.name)
-      .then(res => this.setState({ : res.data }))
-      .catch(err => console.log(err));
-  };*/
-
+onChange = event => {
+  this.setState({bet: parseInt(event.target.value)})
+}
   render() {
     return (
       <Container fluid>
@@ -27,8 +25,8 @@ class PlayerSelect extends Component {
           <Col size="md-6">
 
             <Container fluid>
-            <h2>Wolf X select your player **optional**</h2>
-{this.state.rest.map((player, index) => {
+            <h2>Wolf {this.props.wolf[0]} your player **optional**</h2>
+{this.props.rest.map((player, index) => {
   return(
     <button type="button" class="btn btn-success btn-block" key={index} onClick={this.handleButtonSubmit}>{player}</button>
   )
@@ -43,7 +41,7 @@ class PlayerSelect extends Component {
 
               <Input name="hole-bet" placeholder="Hole bet amount (required)" />
               <FormBtn
-                onClick={this.handleFormSubmit}
+                onClick={this.betSubmit}
                 type="success"
                 className="input-lg"
               >

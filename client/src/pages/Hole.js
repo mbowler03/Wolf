@@ -13,6 +13,7 @@ class Hole extends Component {
 		state: 0
 	};
 
+
 	getPlayers = () => {
 		API.getHole(localStorage.getItem("id"))
 		.then(res => {
@@ -40,7 +41,7 @@ class Hole extends Component {
 		}).then(res => {
 			this.setState({
 				wolf: res.data.players,
-				rest: res.data.amounts,
+				hunter: res.data.amounts,
 				state: 2
 			});
 			if (this.state.hole === 18) {
@@ -75,7 +76,8 @@ class Hole extends Component {
 			return (
 				<BeginHole
 					wolf={this.state.wolf}
-					hunters={this.state.hunters}
+					hunter={this.state.hunter}
+					hole={this.state.hole}
 					next={this.endHole}
 				/>
 			);

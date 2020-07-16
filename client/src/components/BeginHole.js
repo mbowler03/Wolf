@@ -9,18 +9,29 @@ import { Input, FormBtn } from "../components/Form";
 class BeginHole extends Component {
   state = {
 
-      WolfScore: [],
-      HunterScore: []
+      WolfScore: "",
+      HunterScore: ""
   };
 
 
-
-  /*handleButtonSubmit = event => {
+  scoreChange = event => {
+    this.setState({[event.target.name]: event.target.value})
+  }
+  scoreSubmit = event => {
     event.preventDefault();
-    API.post(this.state.wolf)
-      .then(res => this.setState({ : res.data }))
-      .catch(err => console.log(err));
-  }; */
+    let winner = "";
+    const wolfScore = parseInt (this.state.WolfScore)
+    const hunterScore = parseInt (this.state.HunterScore)
+
+    if(wolfScore < hunterScore) {
+      winner = "wolf";
+    } else if(hunterScore < wolfScore) {
+      winner = "hunter";
+    } else { 
+      winner = "none";
+    } 
+    this.props.next(winner);
+  }
 
   render() {
     return (
@@ -34,13 +45,13 @@ class BeginHole extends Component {
 
             <Container fluid>
             <form>
-             <h1>Wolf</h1>
-              <h2>Hole X</h2>
+             <h1>Wolf {this.props.wolf[0]}</h1>
+              <h2>Hole {this.props.hole}</h2>
               <br></br>
 
               <h2>Wolf Team Score</h2>
 
-              <Input name="hole-bet" placeholder="Hole Score (required)" />
+              <Input name="WolfScore" value={this.state.WolfScore} onChange= {this.scoreChange} placeholder="Hole Score (required)" />
 
             </form>
             </Container>
@@ -49,9 +60,9 @@ class BeginHole extends Component {
             <form>
               <h2>Hunter Team Score</h2>
 
-              <Input name="hole-bet" placeholder="Hole Score (required)" />
+              <Input name="HunterScore" value={this.state.HunterScore} onChange={this.scoreChange} placeholder="Hole Score (required)" />
               <FormBtn
-                onClick={this.handleFormSubmit}
+                onClick={this.scoreSubmit}
                 type="success"
                 className="input-lg"
               >
