@@ -26,10 +26,10 @@ a {
 
 }
 button{
-    background-color: #537B0B;
+    background-color: darkgreen;
     font-family: 'Baloo Thambi', cursive;
     text-align: center;
-    color: #7b9395;
+    color: whitesmoke;
     border: 2px solid red;
     border-radius: 12px;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
@@ -61,5 +61,5 @@ nav{
 }
 
 h1{
-    color: #7b9395;
+    color: whitesmoke;
 }
