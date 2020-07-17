@@ -25,7 +25,16 @@ class Hole extends Component {
 		}).catch(err => console.log(err));
 	};
 
+	change = index => {
+		let wolf = [...this.state.wolf];
+		let hunter = [...this.state.hunter];
+		wolf.push(hunter[index]);
+		hunter.splice(index, 1);
+		this.setState({wolf, hunter});
+	};
+
 	startHole = bet => {
+		console.log(bet);
 		this.setState({
 			bet: bet,
 			state: 1
@@ -52,7 +61,7 @@ class Hole extends Component {
 
 	reset = () => {
 		if (this.state.hole === 18) {
-			window.location = "/";
+			window.location.href = "/";
 		} else {
 			this.setState({
 				state: 0
@@ -68,6 +77,7 @@ class Hole extends Component {
 					setup={this.getPlayers}
 					wolf={this.state.wolf}
 					rest={this.state.hunter}
+					change={this.change}
 					next={this.startHole}
 				/>
 			);
@@ -86,7 +96,8 @@ class Hole extends Component {
 			return (
 				<EndHole
 					players={this.state.wolf}
-					amounts={this.state.hunters}
+					amounts={this.state.hunter}
+					hole={this.state.hole}
 					next={this.reset}
 				/>
 			);
