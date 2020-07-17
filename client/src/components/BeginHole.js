@@ -16,34 +16,30 @@ class BeginHole extends Component {
 
   scoreChange = event => {
     this.setState({[event.target.name]: event.target.value})
-  }
+  };
+
   scoreSubmit = event => {
     event.preventDefault();
     let winner = "";
-    const wolfScore = parseInt (this.state.WolfScore)
-    const hunterScore = parseInt (this.state.HunterScore)
+    const wolfScore = parseInt(this.state.WolfScore)
+    const hunterScore = parseInt(this.state.HunterScore)
 
     if(wolfScore < hunterScore) {
       winner = "wolf";
     } else if(hunterScore < wolfScore) {
       winner = "hunter";
-    } else { 
+    } else {
       winner = "none";
-    } 
+    }
     this.props.next(winner);
   }
 
   render() {
     return (
-      <Container fluid>
+      <Container fluid="true">
         <Row>
           <Col size="md-6">
-
-
-
-
-
-            <Container fluid>
+            <Container fluid="true">
             <form>
              <h1>Wolf {this.props.wolf[0]}</h1>
               <h2>Hole {this.props.hole}</h2>
