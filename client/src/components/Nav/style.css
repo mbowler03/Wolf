@@ -73,6 +73,20 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
+
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
@@ -97,7 +111,21 @@ h1{
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -125,6 +153,18 @@ h1{
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+}
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -155,6 +195,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media only screen 
   and (min-device-width: 414px) 
@@ -181,6 +234,19 @@ h1{
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -211,6 +277,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media screen 
   and (device-width: 320px) 
@@ -237,6 +316,19 @@ h1{
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -267,6 +359,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media screen 
   and (device-width: 360px) 
@@ -293,6 +398,19 @@ h1{
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -323,6 +441,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media screen 
   and (device-width: 360px) 
@@ -351,6 +482,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media screen 
   and (device-width: 360px) 
@@ -377,6 +521,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media screen 
   and (device-width: 480px) 
@@ -401,6 +558,19 @@ h1{
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -431,6 +601,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media only screen 
   and (min-device-width: 768px) 
@@ -457,6 +640,19 @@ h1{
   and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -491,6 +687,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
@@ -522,6 +731,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media 
   (max-device-width: 800px) 
@@ -544,6 +766,19 @@ h1{
   and (max-device-width: 1280px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -570,6 +805,19 @@ h1{
   and (-webkit-min-device-pixel-ratio: 1.331) 
   and (-webkit-max-device-pixel-ratio: 1.332) {
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
@@ -603,6 +851,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media screen 
   and (device-width: 1536px) 
@@ -632,6 +893,19 @@ h1{
 
 }
 
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
+}
+
 /* Portrait */
 @media only screen 
   and (min-device-width: 800px) 
@@ -657,6 +931,19 @@ h1{
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
 
+}
+
+nav{
+  background-image: url("bg.jpg");
+  background-position: center;
+  max-width: 480px;
+  background-size: contain;
+  height: 200px; 
+  width: 100%;
+  background-color: darkgreen;
+  position: fixed;
+  
+  
 }
 
 /* Portrait */
