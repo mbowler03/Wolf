@@ -3,6 +3,7 @@ import API from "../utils/API";
 import PlayerSelect from "../components/PlayerSelect";
 import BeginHole from "../components/BeginHole";
 import EndHole from "../components/EndHole";
+import './style.css';
 
 class Hole extends Component {
 	state = {
