@@ -14,10 +14,10 @@ Mongoose
 Axios
 Express
 
-**##Authors
+Authors:
 
-Jonathan Sanger - Server/Backend
-Jay Naporski- Styling 
-Matthew Bowler- Frontend
+*Jonathan Sangster - Server/Backend
+*Jay Naporski- Styling 
+*Matthew Bowler- Frontend
 
 
