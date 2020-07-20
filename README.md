@@ -1,11 +1,11 @@
-**#WOLF
+WOLF
 
-##Wolf is an application that allows for four players to play a common, but often complicated golf betting game. The app takes in inputs during the round, keeps ##track of score, earnings, player progression, and renders a final result.
+Wolf is an application that allows for four players to play a common, but often complicated golf betting game. The app takes in inputs during the round, keeps track of score, earnings, player progression, and renders a final result.
 
-**##Deployed
+Deployed
 https://nameless-shore-48259.herokuapp.com/newround
 
-**##Built With
+Built With:
 
 React
 Javascript
